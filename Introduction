@@ -1,0 +1,21 @@
+''' a '''
+valor = 65
+''' b '''
+class NumeroMenorQue30:
+    def __init__(self):
+        self.valor = None
+    
+    def atribuir(self, numero):
+        if numero < 30:
+            self.valor = numero
+        else:
+            print("O número deve ser menor que 30")
+
+numero_restrito = NumeroMenorQue30()
+
+numero_inserido = int(input("Insira um número menor que 30: "))
+numero_restrito.atribuir(numero_inserido)
+
+if numero_restrito.valor is not None:
+    print("Número restrito:", numero_restrito.valor)
+
